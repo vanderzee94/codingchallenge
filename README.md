@@ -43,7 +43,7 @@ To run:
 `java RomanNumeral` to run a few test cases 
 
 
-Roman numerals only use the letters I, V, X, L, C, D, and M. Given the rules of subtraction for roman numerals, IV, IX, XL, XC, CD, CM are the only valid pairs that use subtraction. By adding these chunks together we can form any number. If we call the base numbers and these valid subtraction paris "chunks" we can form any number by using the largest chunk as many times as possible before adding the next largest chunk. For example the largest chunk in the number 14000 is M (1000) which we can use once leaving us with 400. The next largest chunk we can use is CD (400) giving us M + CD (1000 + 400) = MCD (1400).
+Roman numerals only use the letters I, V, X, L, C, D, and M. Given the rules of subtraction for roman numerals, IV, IX, XL, XC, CD, and CM are the only valid letter combinations that use subtraction. If we call the base numbers and these valid subtraction combinations "chunks", we can form any number by using the largest chunk as many times as possible before adding the next largest chunk. For example the largest chunk in the number 1400 is M (1000) which we can use once leaving us with 400. The next largest chunk we can use is CD (400) giving us M + CD (1000 + 400) = MCD (1400).
 
 
 Test cases were selected to cover all of the letters (I, V, X, L, C, D, M) and all valid subtractions (IV, IX, XL, XC, CD, CM) 
