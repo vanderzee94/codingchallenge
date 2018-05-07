@@ -13,15 +13,10 @@ public class FizzBuzz {
      *  - n if not divisible by 3 or 5
      */
     public static String fizzBuzz(int n) {
-      if (n % 3 == 0 && n % 5 == 0) {
-        return "FizzBuzz";
-      } else if (n % 3 == 0) {
-        return "Fizz";
-      } else if (n % 5 == 0) {
-        return "Buzz";
-      } else {
-        return Integer.toString(n);
-      }
+      String result = "";
+      result += n % 3 == 0 ? "Fizz" : "";
+      result += n % 5 == 0 ? "Buzz" : "";
+      return result.equals("") ? Integer.toString(n) : result;
     }
 
     /**
