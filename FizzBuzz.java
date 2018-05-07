@@ -13,8 +13,7 @@ public class FizzBuzz {
      *  - n if not divisible by 3 or 5
      */
     public static String fizzBuzz(int n) {
-      String result = "";
-      result += n % 3 == 0 ? "Fizz" : "";
+      String result = n % 3 == 0 ? "Fizz" : "";
       result += n % 5 == 0 ? "Buzz" : "";
       return result.equals("") ? Integer.toString(n) : result;
     }
